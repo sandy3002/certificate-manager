@@ -6,11 +6,22 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
+
+  const userName = "admin";
+  const passWord = "admin";
+
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // TODO: Implement login logic here
-    // For now, we'll just navigate to the dashboard
-    navigate('/dashboard');
+    if (username === userName && password === passWord) {
+      // Login successful
+      navigate('/dashboard');
+    } else {
+      // Login failed
+      alert('Invalid username or password');
+    }
+    // navigate('/dashboard');
   };
 
   return (
@@ -26,7 +37,7 @@ const Login = () => {
           <div className="rounded-md shadow-sm -space-y-px">
             <div>
               <label htmlFor="username" className="sr-only">
-                Username
+                Admin
               </label>
               <input
                 id="username"
