@@ -1,0 +1,19 @@
+{
+  "name": "sandy",
+  "version": "1.0.0",
+  "description": "Its a basic certificate generator",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js -e html,js,css"
+  },
+  "author": "Sandipan",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "google-auth-library": "^9.15.0",
+    "googleapis": "^144.0.0",
+    "mongoose": "^8.8.3",
+    "pdf-lib": "^1.17.1"
+  }
+}

@@ -1,0 +1,10 @@
+body{
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	min-height: 98vh;
+}
+main{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
